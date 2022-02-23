@@ -1,0 +1,114 @@
+.prtf-list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.prtf-item-btn + .prtf-item-btn {
+  margin-left: 8px;
+}
+
+.prtf-btn {
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prtf-btn:hover,
+.prtf-btn:focus {
+  background: #2196f3;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.prtf-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.prtf-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
+.prtf-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.prtf-link-card:hover .prtf-top-text,
+.prtf-link-card:focus .prtf-top-text {
+  transform: translateY(0);
+}
+
+.prtf-link-card {
+  display: block;
+  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prtf-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.prtf-top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+
+  letter-spacing: 0.03em;
+  padding: 30px;
+
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  width: 100%;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prtf-link-card:hover,
+.prtf-link-card:focus {
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.prtf-title-content {
+  padding: 20px 24px;
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.prtf-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.prtf-text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
